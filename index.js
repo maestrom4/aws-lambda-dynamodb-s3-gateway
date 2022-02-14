@@ -28,6 +28,9 @@ exports.handler = async function(event) {
         case event.httpMethod === 'POST' && event.path === loginPath:
             response = await login(JSON.parse(event.body));
             break;
+        case event.httpMethod === 'POST' && event.path === loginPath:
+            response = await login(JSON.parse(event.body));
+            break;
     }
 }
 
